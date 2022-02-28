@@ -278,7 +278,7 @@ function splitTests(
         ...newJob.environment,
         ...(isMigration
           ? {
-              AMPLIFY_PATH: '/home/circleci/.npm-global/lib/node_modules/@aws-amplify/cli/bin/amplify',
+              AMPLIFY_PATH: '/home/circleci/.npm-global/lib/node_modules/@aws-amplify/cli-builder/bin/amplify',
             }
           : {
               AMPLIFY_DIR: '/home/circleci/repo/packages/amplify-cli/bin',
@@ -463,15 +463,8 @@ function main(): void {
     join(repoRoot, 'packages', 'amplify-e2e-tests'),
     CONCURRENCY,
   );
-  const splitPkgTests = splitTests(
-    splitNodeTests,
-    'amplify_e2e_tests_pkg',
-    'build_test_deploy',
-    join(repoRoot, 'packages', 'amplify-e2e-tests'),
-    CONCURRENCY,
-  );
   const splitGqlTests = splitTests(
-    splitPkgTests,
+    splitNodeTests,
     'graphql_e2e_tests',
     'build_test_deploy',
     join(repoRoot, 'packages', 'graphql-transformers-e2e-tests'),

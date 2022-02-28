@@ -1,0 +1,1 @@
+{"version":3,"file":"apply-auth-mode.d.ts","sourceRoot":"","sources":["../../../src/extensions/amplify-helpers/apply-auth-mode.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,UAAU,EAAE,MAAM,kBAAkB,CAAC;AAS9C,wBAAgB,uBAAuB,CAAC,OAAO,EAAE,MAAM,GAAG,OAAO,CAEhE;AAED,wBAAsB,2BAA2B,CAAC,OAAO,EAAE,UAAU,EAAE,OAAO,EAAE,MAAM,GAAG,OAAO,CAAC,OAAO,CAAC,CAuBxG;AAkBA,wBAAgB,iBAAiB,IAAI,OAAO,CAW5C"}
