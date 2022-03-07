@@ -21,7 +21,9 @@ export const hasMatchingContentInFolder = (
 
 const main = () => {
   const envVarNameWithCredentialValues = (process.env.ENV_VAR_WITH_SECRETS || '').split(',').map(v => v.trim());
+  let progress = 0;
   const values = envVarNameWithCredentialValues.map(v => process.env[v]).filter(Boolean);
+  console.log(`Progress: ${progress++} of ${envVarNameWithCredentialValues.length}`)
   if (values.length) {
     const hasContent = hasMatchingContentInFolder(values);
     if (hasContent) {
