@@ -5,6 +5,7 @@ module.exports.dictionary = [
   'callout',
   'cognito',
   'creds',
+  'decrypt',
   'dict',
   'execa',
   'extensibility',
@@ -22,6 +23,7 @@ module.exports.dictionary = [
   'uibuilder',
   'unauth',
   'userpool',
+  'utf8',
   'utils',
   'yaml',
 ];
